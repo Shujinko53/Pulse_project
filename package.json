@@ -17,5 +17,11 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
