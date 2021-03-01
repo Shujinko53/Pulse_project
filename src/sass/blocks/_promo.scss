@@ -4,7 +4,7 @@
 
     color: #ffffff;
 
-    background: url('../../img/bg/bg_1.jpg') center (center/cover) no-repeat;
+    background: url('../img/bg/bg_1.jpg') center (center/cover) no-repeat;
 
     &__wrapper {
         display: flex;
@@ -21,6 +21,7 @@
     }
 
     &__subheader {
+        margin: 0;
         margin-top: 7px;
 
         font-weight: 300;
@@ -32,6 +33,7 @@
     &__icons {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
         width: 425px;
         margin-top: 65px;
         img {
@@ -63,3 +65,65 @@
         }
     }
 }
+
+// @media (max-width: 991px) {
+//     .promo {
+
+//     }
+// }
+
+@media (max-width: 767px) {
+    .promo {
+        min-height: 600px;
+        padding: 21px 0 60px 0;
+
+        &__wrapper {
+            margin-top: 90px;
+        }
+    
+        &__header {
+            font-size: 35px;
+            line-height: 35px;
+        }
+    
+        &__subheader {
+            margin-top: 7px;
+    
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    
+        &__icons {
+            width: 350px;
+            margin-top: 60px;
+            img {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+        }
+    
+        &__icon {
+            width: 106px;
+    
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+        }
+
+        &__link {
+            font-size: 14px;
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// @media (max-width: 575px) {
+//     .promo {
+
+//     }
+// }

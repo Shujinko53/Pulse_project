@@ -19,3 +19,29 @@
         font-size: 16px;
     }
 }
+
+// @media (max-width: 991px) {
+//     .button {
+//     }
+// }
+
+@media (max-width: 767px) {
+    .button {
+        width: 120px;
+
+        font-size: 10px;
+
+        &_main {
+            width: 250px;
+            margin-top: 50px;
+
+            font-size: 14px;
+        }
+    }
+}
+
+// @media (max-width: 575px) {
+//     .button {
+
+//     }
+// }
