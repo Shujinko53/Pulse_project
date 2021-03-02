@@ -40,8 +40,13 @@
     }
 }
 
-// @media (max-width: 575px) {
-//     .button {
+@media (max-width: 575px) {
+    .button {
+        &_main {
+            position: absolute;
+            bottom: 55px;
 
-//     }
-// }
+            margin-top: auto;
+        }
+    }
+}

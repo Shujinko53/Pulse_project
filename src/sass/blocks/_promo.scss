@@ -122,8 +122,27 @@
     }
 }
 
-// @media (max-width: 575px) {
-//     .promo {
+@media (max-width: 575px) {
+    .promo {
+        position: relative;
 
-//     }
-// }
+        &__wrapper {
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        &__header {
+            font-size: 30px
+        }
+
+        &__subheader {
+            margin-top: 0;
+            font-size: 17px;
+        }
+
+        &__link {
+            position: absolute;
+            bottom: 25px;
+        }
+    }
+}
