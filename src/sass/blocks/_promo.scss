@@ -137,7 +137,17 @@
 
         &__subheader {
             margin-top: 0;
-            font-size: 17px;
+            font-size: 16px;
+        }
+
+        &__icons {
+            width: 310px;
+        }
+    
+        &__icon {
+            width: 106px;
+    
+            font-size: 12px;
         }
 
         &__link {

@@ -29,11 +29,6 @@
     }
 }
 
-// @media (max-width: 991px) {
-//     .button {
-//     }
-// }
-
 @media (max-width: 767px) {
     .button {
         width: 120px;
@@ -46,16 +41,29 @@
 
             font-size: 14px;
         }
+
+        &_submit {
+            width: 100%;
+
+            font-size: 14px;
+        }
     }
 }
 
 @media (max-width: 575px) {
     .button {
+        width: 110px;
+
         &_main {
             position: absolute;
             bottom: 55px;
 
+            width: 250px;
             margin-top: auto;
+        }
+
+        &_submit {
+            width: 100%;
         }
     }
 }
