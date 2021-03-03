@@ -36,6 +36,7 @@
         align-items: baseline;
         width: 425px;
         margin-top: 65px;
+
         img {
             display: block;
             margin: 0 auto;
@@ -57,11 +58,22 @@
 
         font-weight: 300;
         font-size: 16px;
+
         a {
             font-weight: 300;
             font-size: 16px;
             color: #ffffff;
             text-decoration: underline;
+
+            outline: none;
+
+            transition: 0.3s all;
+
+            &:hover,
+		    &:focus {
+                font-weight: 500;
+			    color: $main_color;
+		    }
         }
     }
 }

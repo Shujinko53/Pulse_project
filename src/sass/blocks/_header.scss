@@ -5,6 +5,9 @@
 
 	&__logo {
 		width: 250px;
+
+		outline: none;
+		
 		img {
 			width: 100%;
 		}
@@ -34,7 +37,10 @@
 
 		transition: 0.3s all;
 
-		&:hover {
+		outline: none;
+
+		&:hover,
+		&:focus {
 			color: $main_color;
 		}
 	}

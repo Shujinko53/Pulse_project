@@ -41,9 +41,19 @@
         text-align: center;
 
         a {
-            color: #ff0000;
             text-transform: uppercase;
             text-decoration: underline;
+            color: #ff0000;
+            
+            outline: none;
+
+            transition: 0.3s all;
+
+            &:hover,
+		    &:focus {
+                font-weight: 500;
+			    color: #837f7f;
+		    }
         }
     }
 }
