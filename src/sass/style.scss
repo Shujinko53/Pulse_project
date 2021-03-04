@@ -5,12 +5,15 @@
 @import 'blocks/advantages';
 @import 'blocks/consultation';
 @import 'blocks/forms';
+@import 'blocks/carousel';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
 .container {
+    position: relative;
+    
     max-width: 950px;
     margin: 0 auto;
 }

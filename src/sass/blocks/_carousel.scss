@@ -1,0 +1,75 @@
+.carousel {
+    padding: 82px 0;
+
+    &__inner {
+        position: relative;
+
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+
+        background-color: transparent;
+        border: none;
+
+        transform: translateY(-50%);
+
+        // transition: 0.5s all;
+
+        img {
+            width: 25px;
+            height: 40px;
+        }
+    }
+
+    .prev {
+        left: -66px;
+    }
+
+    .next {
+        right: -66px;
+    }
+
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    // .tns-nav {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     width: 100px;
+    //     margin: 0 auto;
+    //     button {
+    //         position: relative;
+
+    //         width: 16px;
+    //         height: 16px;
+
+    //         background-color: #e4e4e4;
+    //         border: none;
+    //         border-radius: 100%;
+
+    //         &.tns-nav-active::before {
+    //             content: '';
+
+    //             position: absolute;
+    //             top: 3px;
+    //             left: 3px;
+
+    //             width: 10px;
+    //             height: 10px;
+
+    //             background-color: #1c1f38;
+    //             border-radius: 100%;
+    //         }
+    //     }
+
+    // }
+}
