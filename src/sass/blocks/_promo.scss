@@ -136,8 +136,6 @@
 
 @media (max-width: 575px) {
     .promo {
-        position: relative;
-
         &__wrapper {
             align-items: center;
             margin-top: 60px;
@@ -160,11 +158,6 @@
             width: 106px;
     
             font-size: 12px;
-        }
-
-        &__link {
-            position: absolute;
-            bottom: 25px;
         }
     }
 }
