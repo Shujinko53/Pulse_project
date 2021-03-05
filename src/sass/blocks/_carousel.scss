@@ -1,11 +1,23 @@
 .carousel {
     padding: 82px 0;
 
-    &__inner {
+    &__container {
         position: relative;
 
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    &__inner {
         width: 750px;
         margin: 0 auto;
+    }
+
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     .prev,
@@ -32,13 +44,6 @@
 
     .next {
         right: -66px;
-    }
-
-    .tns-item {
-        img {
-            display: block;
-            margin: 0 auto;
-        }
     }
 
     // .tns-nav {
@@ -72,4 +77,130 @@
     //     }
 
     // }
+}
+
+@media (max-width: 1100px) {
+    .carousel {
+        &__container {
+            max-width: 750px;
+        }
+
+        .tns-item {
+            img {
+                width: 550px;
+            }
+        }
+
+        .prev {
+            left: -60px;
+        }
+    
+        .next {
+            right: -60px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel {
+        &__container {
+            max-width: 650px;
+        }
+
+        .tns-item {
+            img {
+                width: 450px;
+            }
+        }
+
+        .prev {
+            left: -50px;
+        }
+    
+        .next {
+            right: -50px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        &__container {
+            max-width: 450px;
+        }
+
+        .tns-item {
+            img {
+                width: 350px;
+            }
+        }
+
+        .prev {
+            left: -40px;
+        }
+    
+        .next {
+            right: -40px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel {
+        &__container {
+            max-width: 295px;
+        }
+
+        .tns-item {
+            img {
+                width: 290px;
+            }
+        }
+
+        .prev,
+        .next {
+            img {
+                width: 20px;
+                height: 35px;
+            }
+        }
+
+        .prev {
+            left: -40px;
+        }
+    
+        .next {
+            right: -40px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .carousel {
+        &__container {
+            max-width: 240px;
+        }
+
+        .tns-item {
+            img {
+                width: 220px;
+            }
+        }
+
+        .prev,
+        .next {
+            img {
+                width: 20px;
+                height: 35px;
+            }
+        }
+
+        .prev {
+            left: -35px;
+        }
+    
+        .next {
+            right: -35px;
+        }
+    }
 }
