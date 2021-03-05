@@ -1,4 +1,6 @@
 .promo {
+    position: relative;
+
     min-height: 650px;
     padding: 21px 0 93px 0;
 
@@ -158,6 +160,11 @@
             width: 106px;
     
             font-size: 12px;
+        }
+
+        &__link {
+            position: absolute;
+            bottom: 35px;
         }
     }
 }
