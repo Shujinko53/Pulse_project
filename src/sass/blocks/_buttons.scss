@@ -36,6 +36,14 @@
 
         border-radius: 5px;
     }
+
+    &_mini {
+        width: 130px;
+        height: 40px;
+
+        font-size: 14px;
+        color: #ffffff;
+    }
 }
 
 @media (max-width: 767px) {

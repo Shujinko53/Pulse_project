@@ -47,12 +47,10 @@
             
             outline: none;
 
-            transition: 0.3s all;
-
             &:hover,
 		    &:focus {
                 font-weight: 500;
-			    color: #837f7f;
+			    color: #ff0000;
 		    }
         }
     }
