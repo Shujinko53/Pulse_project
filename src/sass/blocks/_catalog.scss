@@ -63,16 +63,89 @@
     }
 
     &__content {
+        display: none;
+        flex-wrap: wrap;
         margin-top: 60px;
+
+        &_active {
+            display: flex;
+        }
     }
 
     &-item {
+        margin-right: 16px;
+        margin-bottom: 19px;
         padding: 20px;
-
         width: 300px;
         min-height: 440px;
 
         border: 2px solid #E8E8E8;
+
+        overflow: hidden;
+
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+
+        &__content {
+            width: 50%;
+            margin-right: 0;
+
+            transform: translateX(-100%);
+            transition: 0.5s all;
+
+            &_active {
+                margin-right: 20px;
+
+                transform: translateX(0%);
+            }
+        }
+
+        &__list {
+            position: relative;
+
+            width: 50%;
+            margin: 0;
+            margin-left: 20px;
+            padding: 0;
+            padding-right: 20px;
+
+            list-style: none;
+            
+            transform: translateX(0%);
+            transition: 0.5s all;
+
+            &_active {
+                margin-left: 0;
+
+                transform: translateX(-100%);
+            }
+
+            li {
+                position: relative;
+
+                margin-bottom: 3px;
+                padding-left: 17px;
+
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #555555;
+                &:before {
+                    content: '';
+
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+
+                    width: 5px;
+                    height: 5px;
+
+                    background-color: $main_color;
+                }
+            }
+        }
 
         &__img {
             display: block;
@@ -113,6 +186,27 @@
             text-decoration: underline;
             text-transform: uppercase;
             color: $main_color;
+
+            &:hover {
+                color: $main_color;
+            }
+        }
+
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+
+            display: block;
+
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: $main_color;
+
+            transform: translateX(calc(-50% - 10px));
 
             &:hover {
                 color: $main_color;
