@@ -51,6 +51,21 @@ $(document).ready(function() {
 
 	toggleClass('.catalog-item__link');
 	toggleClass('.catalog-item__back');
+
+	$('.feed-form').validate({
+		rules: {
+			name: "required",
+			phone:"required",
+			email: "required"
+		},
+		messages: {
+			name: "Пожалуйста, введите Ваше имя",
+			phone: "Пожалуйста, введите Ваш номер",
+			email: "Пожалуйста, введите Ваш email"
+		}
+	});
+	
+	$('input[name=phone]').mask("+7 (999) 999-99-99");
 });
 	
 	
