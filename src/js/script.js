@@ -66,6 +66,29 @@ $(document).ready(function() {
 	});
 	
 	$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+	//  Modal
+
+	$('[data-modal=consultation]').on('click', function() {
+		$('.overlay, #consultation').fadeIn();
+	});
+
+	$('.modal__close, .overlay').on('click', function() {
+		$('.overlay, #consultation, #order, #thanks').fadeOut();
+	});
+
+	$(window).keydown(function(event) {
+		if (event.which == 27) {
+			$('.overlay, #consultation, #order, #thanks').fadeOut();
+		}
+	})
+
+	$('.button_mini').each(function(i) {
+		$(this).on('click', function() {
+			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn();
+		})
+	});
 });
 	
 	
