@@ -104,6 +104,16 @@ $(document).ready(function() {
 	
 	
 	$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+	// Smooth scroll amd pageup
+
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 1300) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
 });
 	
 	
