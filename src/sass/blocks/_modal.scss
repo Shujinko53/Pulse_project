@@ -20,7 +20,7 @@
 
     background-color: #f2f2f2;
 
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -70%);
 
     &__close {
         position: absolute;
@@ -62,4 +62,66 @@
 
 #consultation, #order, #thanks {
     display: none;
+}
+
+@media (max-width: 1199px) {
+    .modal {
+        transform: translate(-50%, -60%);
+    }
+}
+
+@media (max-width: 767px) {
+    .modal {
+        .feed-form_modal {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .modal {
+        .feed-form {
+            width: 265px;
+
+            input.error {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .modal {
+        width: 300px;
+        padding: 32px 10px 20px;
+
+        transform: translate(-50%, -50%);
+
+        .feed-form {
+            width: 220px;
+        }
+
+        &__close {
+            top: 10px;
+            right: 10px;
+    
+            font-size: 30px;
+            line-height: 15px;
+        }
+    
+        &__subtitle {
+            font-size: 16px;
+        }
+    
+        &__descr {
+            font-size: 10px;
+        }
+    
+
+        label.error {
+            font-size: 12px;
+            color: #0d0d0d;
+        }
+
+    }
 }
