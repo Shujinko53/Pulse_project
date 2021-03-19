@@ -4,6 +4,8 @@
 
     color: #0d0d0d;
 
+    background-color: #f6f6f6;
+
     &__title {
         font-weight: 700;
         font-size: 30px;
@@ -52,6 +54,16 @@
                 font-weight: 500;
 			    color: #ff0000;
 		    }
+        }
+    }
+
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
 }
